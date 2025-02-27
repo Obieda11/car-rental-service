@@ -35,6 +35,9 @@ class bike(vehicle):
     def __init__(self, brand, model, year, rental_price_per_day, engine_capacity):
         super().__init__(brand, model, year, rental_price_per_day)
         self.engine_capacity = engine_capacity
+    
+    def display_info(self):
+        print(f"vehicle: {self.brand} model: {self.model} year: {self.year} rental price: {self.rental_price_per_day} seating capacity: {self.engine_capacity}")
 
 
         
