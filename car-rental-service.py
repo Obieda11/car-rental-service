@@ -20,7 +20,6 @@ class vehicle:
     
 
 
-
 class car(vehicle):
     def __init__(self, brand, model, year, rental_price_per_day, seating_capacity):
         super().__init__(brand, model, year, rental_price_per_day)
@@ -51,7 +50,7 @@ Bike = bike("Yamaha", "R1", 2019, 30, 998)
 Bike.display_info()
 
 print(f"\nRental cost for Toyota, Corolla for 3 days: ${Car.rental_cost(3)}")
-print(f"\nRental cost for Yamaha, R1 for 5 days: ${Bike.rental_cost(3)}")
+print(f"\nRental cost for Yamaha, R1 for 5 days: ${Bike.rental_cost(5)}")
 
-car.set_rental_price_per_day(55)
-print(f"Modified rental price for Toyota Corolla: ${car.set_rental_price_per_days(55)}")
+Car.set_rental_price_per_days(55)
+print(f"Modified rental price for Toyota Corolla: ${Car.set_rental_price_per_days(55)}")
