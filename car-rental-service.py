@@ -50,3 +50,5 @@ car.display_info()
 Bike = bike("Yamaha", "R1", 2019, 30, 998)
 Bike.display_info()
 
+print(f"\nRental cost for Toyota, Corolla for 3 days: ${car.rental_cost(3)}")
+print(f"\nRental cost for Yamaha, R1 for 5 days: ${bike.rental_cost(3)}")
